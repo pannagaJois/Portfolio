@@ -1,0 +1,32 @@
+body {
+    background-color: #1e1e1e;
+    color:#f0f0f0;
+    font-family: Arial, sans-serif;
+    margin:0;
+    padding:0;
+}
+
+h1,h2 {
+    text-align: center;
+}
+
+#projects {
+    margin:50px;
+}  
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+}
+.gallery img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease;
+}
+
+.gallery img:hover {
+    transform: scale(1.05);
+}
